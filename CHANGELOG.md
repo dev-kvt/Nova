@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Environment setup guide and configuration templates
+- Git hooks integration and installer
+- CI/CD workflows for GitHub Actions
+- Mock AI provider for testing
+- Config management commands
+
+## [0.1.0] - 2024-11-02
+
+### Added
+
 - Complete core functionality implementation
 - Utility modules (logger, errors, colors, text, file-system)
 - Configuration system with loader and defaults
@@ -19,19 +29,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - OpenAI provider integration
 - Ollama provider integration
 - AI client with fallback support
-- CLI commands (improve, setup)
-- Initial project setup
-- Basic folder structure
-- Configuration files
-- Documentation structure
-- Development environment setup
-
-## [0.1.0] - TBD
-
-### Added
-
-- Initial release
-- Core CLI functionality
-- OpenAI integration
-- Basic message improvement
-- Git hook integration
+- CLI commands (improve, setup, config)
+- Git hooks support (prepare-commit-msg)
+- Environment configuration with .env support
+- Comprehensive documentation
+- Development environment with ESLint, Prettier, Husky
+- Initial project structure and setup
