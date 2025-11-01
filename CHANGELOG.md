@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Complete core functionality implementation
+- Utility modules (logger, errors, colors, text, file-system)
+- Configuration system with loader and defaults
+- Message processor with classification and sanitization
+- Formatter supporting Conventional Commits, Semantic, and Custom formats
+- Validator with quality scoring
+- AI provider abstraction with BaseAIProvider
+- OpenAI provider integration
+- Ollama provider integration
+- AI client with fallback support
+- CLI commands (improve, setup)
 - Initial project setup
 - Basic folder structure
 - Configuration files
