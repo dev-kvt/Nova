@@ -51,6 +51,8 @@ npm install -g nova-commit
 ```
 
 ### Basic Usage
+<img width="499" height="236" alt="image" src="https://github.com/user-attachments/assets/97d85d4c-6e42-4376-957c-921ea8ce45cd" />
+
 
 ```bash
 # Improve a single commit message
