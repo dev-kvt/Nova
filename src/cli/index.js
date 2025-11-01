@@ -7,6 +7,8 @@
 
 import { Command } from 'commander';
 import { readFileSync } from 'fs';
+import improveCommand from './commands/improve.js';
+import setupCommand from './commands/setup.js';
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
 
@@ -17,21 +19,20 @@ program
   .description('AI-powered Git commit message enhancement')
   .version(packageJson.version);
 
-// TODO: Add commands
 program
   .command('improve <message>')
   .description('Improve a commit message using AI')
-  .action((message) => {
-    console.log('Improving message:', message);
-    // TODO: Implement message improvement
+  .option('-p, --provider <provider>', 'AI provider (openai, ollama, both)')
+  .option('-f, --force', 'Force enhancement even if message is valid')
+  .action(async (message, options) => {
+    await improveCommand(message, options);
   });
 
 program
   .command('setup')
   .description('Configure Nova')
-  .action(() => {
-    console.log('Setup wizard coming soon!');
-    // TODO: Implement setup wizard
+  .action(async (options) => {
+    await setupCommand(options);
   });
 
 program.parse();
