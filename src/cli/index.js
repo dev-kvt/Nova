@@ -9,6 +9,7 @@ import { Command } from 'commander';
 import { readFileSync } from 'fs';
 import improveCommand from './commands/improve.js';
 import setupCommand from './commands/setup.js';
+import configCommand from './commands/config.js';
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
 
@@ -33,6 +34,13 @@ program
   .description('Configure Nova')
   .action(async (options) => {
     await setupCommand(options);
+  });
+
+program
+  .command('config [action] [key] [value]')
+  .description('Manage configuration')
+  .action(async (action, key, value) => {
+    await configCommand(action, key, value);
   });
 
 program.parse();
