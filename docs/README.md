@@ -6,8 +6,9 @@ Welcome to the Nova documentation hub. This directory contains comprehensive doc
 
 ### Core Documentation
 
+- **[Environment Setup](ENV_SETUP.md)** - Configure AI providers and API keys
 - **[API Reference](api/README.md)** - Complete API documentation for developers
-- **[Architecture](../../Documentations/architecture.md)** - System architecture and design patterns
+- **[Architecture](architecture.md)** - System architecture and design patterns
 - **[Contributing](../../CONTRIBUTING.md)** - How to contribute to the project
 - **[Development Guide](development.md)** - Development setup and workflow
 

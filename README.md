@@ -50,6 +50,20 @@ This repository contains comprehensive documentation for understanding, developi
 npm install -g nova-commit
 ```
 
+### Setup
+
+```bash
+# 1. Create .env file
+cp env.example .env
+
+# 2. Add your API key to .env
+# OPENAI_API_KEY=sk-your-key-here
+# OR configure OLLAMA_BASE_URL for offline mode
+
+# 3. Test it
+nova improve "fix bug"
+```
+
 ### Basic Usage
 
 ```bash
@@ -103,7 +117,11 @@ git commit -m "add user feature"
 
 - **Node.js** v18 or higher
 - **Git** (for hook integration)
-- **AI Provider**: OpenAI API key OR Ollama (for offline mode)
+- **AI Provider**:
+  - OpenAI API key ([Get one here](https://platform.openai.com/api-keys))
+  - OR Ollama for offline mode ([Install here](https://ollama.ai/))
+
+See [Environment Setup Guide](docs/ENV_SETUP.md) for detailed configuration.
 
 ---
 
