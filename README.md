@@ -27,19 +27,18 @@ This repository contains comprehensive documentation for understanding, developi
 
 ### Core Documents
 
-| Document | Description | Audience |
-|----------|-------------|----------|
-| **[PRD](prd.md)** | Original Project Requirements Document | All stakeholders |
-| **[PROJECT_OVERVIEW](PROJECT_OVERVIEW.md)** | High-level project vision and overview | All stakeholders |
-| **[ARCHITECTURE](architecture.md)** | Detailed system architecture and design | Developers, architects |
-| **[PROJECT_STRUCTURE](PROJECT_STRUCTURE.md)** | Complete folder structure and organization | Developers |
+| Document                                           | Description                                | Audience               |
+| -------------------------------------------------- | ------------------------------------------ | ---------------------- |
+| **[PROJECT_OVERVIEW](docs/PROJECT_OVERVIEW.md)**   | High-level project vision and overview     | All stakeholders       |
+| **[ARCHITECTURE](docs/architecture.md)**           | Detailed system architecture and design    | Developers, architects |
+| **[PROJECT_STRUCTURE](docs/PROJECT_STRUCTURE.md)** | Complete folder structure and organization | Developers             |
 
 ### Quick Navigation
 
-- **New to the project?** Start with [PROJECT_OVERVIEW](PROJECT_OVERVIEW.md)
-- **Want to understand the design?** Read [ARCHITECTURE](architecture.md)
-- **Planning to contribute?** See [PROJECT_STRUCTURE](PROJECT_STRUCTURE.md)
-- **Looking for requirements?** Check [PRD](prd.md)
+- **New to the project?** Start with [PROJECT_OVERVIEW](docs/PROJECT_OVERVIEW.md)
+- **Want to understand the design?** Read [ARCHITECTURE](docs/architecture.md)
+- **Planning to contribute?** See [PROJECT_STRUCTURE](docs/PROJECT_STRUCTURE.md) and [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Looking for examples?** Check [docs/examples/](docs/examples/)
 
 ---
 
@@ -55,7 +54,7 @@ npm install -g nova-commit
 
 ```bash
 # Improve a single commit message
-nova "fixed the bug in login"
+nova improve "fixed the bug in login"
 
 # Output:
 # ✓ fix(auth): resolve login authentication bug
@@ -77,22 +76,26 @@ git commit -m "add user feature"
 
 ## 🏗️ Project Status
 
-**Current Phase**: Design & Architecture ✅
+**Current Phase**: Setup & Initial Development ✅
 
 ### Completed
-- ✅ Project Requirements Document (PRD)
-- ✅ System architecture design
+
+- ✅ Project requirements and architecture design
 - ✅ Production folder structure
 - ✅ Comprehensive documentation
+- ✅ Development environment setup
 
 ### In Progress
-- 🔄 Implementation planning
-- 🔄 Development environment setup
+
+- 🔄 Core CLI implementation
+- 🔄 AI provider integrations
+- 🔄 Message processing logic
 
 ### Upcoming
-- ⏳ MVP development (Week 1)
-- ⏳ Git hook integration (Week 2)
-- ⏳ Beta release (Week 3)
+
+- ⏳ Git hook integration
+- ⏳ Testing infrastructure
+- ⏳ Beta release
 
 ---
 
@@ -107,12 +110,14 @@ git commit -m "add user feature"
 ## 🎨 Example
 
 ### Before Nova
+
 ```bash
 git commit -m "fix bug"
 # Commit message is vague and non-standard
 ```
 
 ### After Nova
+
 ```bash
 git commit -m "fix bug"
 [nova] Enhanced: fix(auth): resolve null pointer exception in user authentication
@@ -128,7 +133,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 ### Development Setup
 
 1. Fork the repository
-2. Clone your fork
+2. Clone your fork: `git clone https://github.com/your-username/nova.git`
 3. Install dependencies: `npm install`
 4. Create a feature branch
 5. Make your changes
@@ -140,28 +145,25 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 ## 📊 Roadmap
 
 ### Phase 1: MVP (Week 1)
+
 - Core CLI functionality
 - OpenAI integration
 - Basic message improvement
 - Unit tests
 
 ### Phase 2: Beta (Week 2)
+
 - Git hook integration
 - Ollama (offline) support
 - Conventional Commits validation
 - Integration tests
 
 ### Phase 3: Release (Week 3)
+
 - Documentation completion
 - Performance optimization
 - npm publication
 - Community setup
-
-### Phase 4: Post-Launch (Months 2-4)
-- Custom conventions
-- Multi-language support
-- IDE plugins
-- Team collaboration features
 
 ---
 
@@ -171,35 +173,6 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 - **Local Option**: Ollama mode keeps all data local
 - **API Key Protection**: Secure environment variable handling
 - **Input Sanitization**: Validation and length limits
-
----
-
-## 📈 Success Metrics
-
-| Metric | Target |
-|--------|--------|
-| Response Time | < 2 seconds |
-| User Acceptance | > 80% |
-| Adoption | 1000+ installs (Q1) |
-| Reliability | > 99% uptime |
-
----
-
-## 🗂️ Repository Structure
-
-```
-Nova/
-├── prd.md                  # Original requirements
-├── PROJECT_OVERVIEW.md     # Project overview
-├── architecture.md         # System architecture
-├── PROJECT_STRUCTURE.md    # Folder structure
-├── README.md               # This file
-├── .github/                # GitHub configs
-├── docs/                   # Documentation
-├── src/                    # Source code
-├── tests/                  # Test suites
-└── scripts/                # Build scripts
-```
 
 ---
 
@@ -228,26 +201,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 📞 Contact
-
-- **Issues**: [GitHub Issues](https://github.com/your-org/nova/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-org/nova/discussions)
-- **Email**: nova@example.com
-
----
-
-## ⭐ Support Nova
-
-If you find Nova useful, please consider:
-- ⭐ Starring the repository
-- 🐛 Reporting bugs or suggesting features
-- 📖 Improving documentation
-- 💻 Contributing code
-
----
-
 **Built with ❤️ for developers who care about code quality**
 
 ---
 
-*Nova is currently in active development. Documentation and features are subject to change.*
+_Nova is currently in active development. Documentation and features are subject to change._

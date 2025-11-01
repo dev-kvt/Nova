@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "convention": "conventional",
+  "ai": {
+    "provider": "openai",
+    "fallback": true,
+    "model": "gpt-4-turbo-preview"
+  },
+  "formatting": {
+    "autoFormat": true,
+    "wrapLength": 72
+  },
+  "validation": {
+    "strictMode": false,
+    "minLength": 10,
+    "maxLength": 500
+  }
+}
